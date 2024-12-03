@@ -1,0 +1,41 @@
+.container {
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.radioInput {
+  display: none;
+}
+
+.star {
+  font-size: 32px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #ffca28;
+}
+
+.radioInput:checked ~ .star {
+  color: #ffca28;
+}
+
+.filled {
+  color: #ffca28;
+}

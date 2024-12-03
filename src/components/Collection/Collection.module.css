@@ -1,0 +1,44 @@
+.container {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.cardContent {
+  padding: 16px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: bolder;
+  margin: 0 0 8px;
+  color: #555;
+}
+
+.cardText {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #555;
+}
